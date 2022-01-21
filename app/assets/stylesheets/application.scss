@@ -1,0 +1,68 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+@import "components/links";
+
+@import "pages/orders";
+
+
+.light-gray {
+  color: $light-gray;
+}
+
+.green {
+  color: $green;
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(211deg, $light-gray 0%, $orange 70%);
+  user-select: none;
+  transition: background-color .5s;
+}
+
+.card img {
+  width: 100px;
+}
+
+.card p {
+  opacity: .5;
+}
+
+.card {
+  width: 180px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(230,230,230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+}
+
+.cards {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+
+h1 {
+  font-size: 10px;
+
+}
+
+
+
+#basket-address {
+  color: red;
+}

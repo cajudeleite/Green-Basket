@@ -1,0 +1,67 @@
+<div class="sign sign-background password-forgot">
+  <div class="form-inputs">
+    <div class='card-3d-wrap mt-auto   pt-3'>
+      <div class='card-3d-wrapper'>
+        <div class='center-wrap back'>
+          <div class='section text-center'>
+            <h4 class='mb-3 pb-2'>Create a new basket</h4>
+            <div class='container'>
+              <%= simple_form_for @basket do |f| %>
+
+                <%=f.input :name,
+                            required: true,
+                            autofocus: true,
+                            class: 'form-style border border-1 border-white rounded',
+                            placeholder: "Name" %>
+                <i class='input-icon uil uil-at'></i>
+
+
+                <%=f.input :description,
+                            required: false,
+                            autofocus: true,
+                            class: 'form-style border border-1 border-white rounded',
+                            placeholder: "Description" %>
+                <i class='input-icon uil uil-at'></i>
+
+
+                <%=f.input :address,
+                            required: true,
+                            autofocus: true,
+                            class: 'form-style border border-1 border-white rounded',
+                            placeholder: "Address",
+                            id: 'basket-address' %>
+                <i class='input-icon uil uil-at'></i>
+
+
+                <%=f.input :price,
+                            required: true,
+                            autofocus: true,
+                            min: '1',
+                            class: 'form-style border border-1 border-white rounded',
+                            placeholder: "Price" %>
+                <i class='input-icon uil uil-at'></i>
+
+
+                <%=f.input :stock,
+                            required: false,
+                            autofocus: true,
+                            min: '1',
+                            class: 'form-style border border-1 border-white rounded',
+                            placeholder: "Stock" %>
+                <i class='input-icon uil uil-at'></i>
+
+                <%= f.input :photo,
+                            as: :file,
+                            class: 'btn-sign mb-1 mt-3 rounded-3' %>
+
+                <div class="form-actions">
+                  <%= f.submit "Create basket", class: 'btn-sign mb-1 mt-3 rounded-3' %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,193 @@
+.dashboard-container {
+  //margin: 30px;
+  height: calc(100vh - 122px);
+
+  .baskets {
+    height: 500px;
+  }
+
+  button {
+    height: 45px;
+    width: 400px;
+    justify-content: center;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: $light-gray;
+    background-color: $green;
+    cursor: pointer;
+    outline: none;
+  }
+
+  button:hover {
+    background-color: $orange;
+    color: $green;
+    transition: 0.5s;
+  }
+  p {
+    margin: 150px 0 150px 0;
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .filter-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 300px 0 300px;
+  }
+
+  .orders-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    // justify-content: center;
+  }
+
+  .orders-card {
+    width: 200px;
+    height: 300px;
+    background-color: $light-gray;
+    margin: 20px 20px 20px 0px;
+    background: $light-gray;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.0px );
+    -webkit-backdrop-filter: blur( 3.0px );
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+  }
+
+  .basket-card-db {
+
+    min-width: 200px;
+    background-color: $light-gray;
+    margin: 20px 20px 20px 0px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.0px );
+    -webkit-backdrop-filter: blur( 3.0px );
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+  }
+
+  .card-content {
+    padding: 20px;
+    button {
+      display: block ;
+      text-align: center;
+      margin: 0 auto;
+      width: 65;
+    }
+    h2 {
+      color:$green;
+      font-weight: bold;
+      text-align: start;
+      font-size: 23px;
+      margin-bottom: 0;
+    }
+
+
+    p {
+      color:$green;
+      font-size: 20px;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+  }
+
+  .image-order {
+    position: relative;
+    top: -20px;
+    left: -20px;
+
+    img {
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  .orders {
+    margin-top: 30px;
+  }
+
+  .baskets {
+    margin-top: 30px;
+  }
+
+  .basket-orders-card {
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.25 );
+    margin-top: 10px;
+    a{
+      margin-bottom: 8px;
+    }
+  }
+
+#add-basket-button {
+      display: block ;
+      text-align: center;
+      margin: 0 auto;
+      width: 900;
+}
+
+.btngui {
+  height: 45px;
+  width: 150px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $light-gray;
+  background-color: $green;
+  cursor: pointer;
+  outline: none;
+}
+
+.btngui:hover {
+  background-color: $orange;
+  color: $green;
+  transition: 0.5s;
+}
+
+h1 {
+  color:$green;
+  font-weight: bold;
+  font-size: 50px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+
+h2 {
+  color:$green;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+p {
+  color:$green;
+  font-size: 20px;
+}
+}
+
+
+.basket-orders {
+  a {
+    text-decoration: none !important;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+}
